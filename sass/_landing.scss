@@ -1,0 +1,48 @@
+.landing{
+    border: 1px solid rgba(#000000, 0.0);
+    min-height: 90vh;
+    position: relative;
+    margin-bottom: 4rem;
+    
+
+
+    h1{
+        text-transform: uppercase;
+        font-family: $pro;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 121px;
+        letter-spacing: 0.02em;
+        color: $yellow;
+        margin-top: 21.9rem;
+    }
+
+    p{
+        font-family: $rale;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        color: $grey;
+        width: 75%;
+        margin-top: 3rem;
+    }
+
+    h2{
+        position: absolute;
+        top: 4.5rem;
+        left: -0.02em;
+        text-transform: uppercase;
+        font-family: $pro;
+        font-size: 200px;
+        font-weight: 700;
+        line-height: 302px;
+        letter-spacing: 0.02em;
+        color: $bgText;
+    }
+
+    #lowerH2{
+        left: 15rem;
+        top: 250px;
+    }
+}

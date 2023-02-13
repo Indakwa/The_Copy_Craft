@@ -1,0 +1,86 @@
+@import 'config';
+
+
+
+body{
+    background: $black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 70.5vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+header{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 70.5vw;
+    margin: 0 auto;
+    z-index: 10;
+    padding-top: 3rem;
+
+    nav{
+        display: flex;
+
+
+        ul{
+            margin-left: auto;
+            margin-right: -6.5rem;
+            li{
+                display: inline-block;
+                list-style-type: none;
+                margin-left: 1rem;
+
+                a{
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: $bright;
+                    font-family: $rale;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: .5s ease;
+                    color: $grey;
+
+                    &:hover{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'nav';  
+
+@import 'landing';   
+@import 'services';   
+@import 'subscribe';   
+@import 'contact';   
+
+
+footer{
+    margin-top: 14rem;
+    padding-bottom: 1rem;
+
+    p{
+        font-family: $pro;
+        text-align: center;
+        font-size: 1rem;
+        color: $darkGrey;
+        line-height: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+@import 'mobile';
+@import 'macbook';
+@import 'mini-laptop';
+@import 'tablet';

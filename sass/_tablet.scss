@@ -1,0 +1,173 @@
+@media only screen and (min-width: 401px) and (max-width: 899px){
+
+    .header{
+        width: 90vw;
+    }
+
+    .container{
+        width: 90vw;
+    } 
+
+    .landing{
+        min-height: 80vh;
+        margin-bottom: 4rem;
+        
+    
+    
+        h1{
+            font-size: 50px;
+            line-height: 111px;
+            margin-top: 16rem;
+        }
+    
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 1rem;
+        }
+    
+        h2{
+            top: 2.5rem;
+            left: -0.02em;
+            font-size: 125px;
+        }
+    
+        #lowerH2{
+            left: 9rem;
+            top: 160px;
+        }
+    }
+
+    .services{
+    
+        .horizontal{
+            width: 80%;
+            margin-top: 2.2rem;
+            margin-left: 10rem;
+    
+            h3{
+                font-size: 100px;
+                line-height: 151px;
+            }
+
+            h6{
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 2.8rem;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 130%;
+                width: 85%;
+                margin-bottom: 1.6rem;
+        
+                span{
+                    font-size: 22px;
+                    line-height: 130%;
+                }
+            }
+        }
+    
+        .vertical{
+            top: 19rem;
+            
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .subscribe{
+        flex-direction: column;
+        margin-top: 8rem;
+    
+        .imageDiv{
+            padding: 0;
+            padding-left: 10rem;
+            img{
+                width: 70%;
+            }
+        }
+
+        .right-section{
+            margin-left: 0rem;
+            margin-top: -6rem;
+
+            h3{
+                font-size: 92px;
+                line-height: 151px;
+            }
+
+            .inner-container{
+                position: relative;
+                top: 4.5rem;
+                left: 11rem;
+                width: 100%;
+    
+                h6{
+                    font-size: 18px;
+                    margin-bottom: 2.2rem;
+                }
+    
+                p{
+                    font-size: 18px;
+                    color: $grey;
+                    width: 90%;
+                    margin-bottom: 1.6rem;
+                }
+    
+            }
+        }
+    
+    }
+
+    .contact{
+        margin-top: 12rem;
+    
+        .horizontal{
+            width: 90%;
+            margin-top: 2.2rem;
+            margin-left: 10.6rem;
+    
+            h3{
+                white-space: nowrap;
+                font-size: 92px;
+            }
+            h6{
+                font-size: 18px;
+                margin-bottom: 2.5rem;
+            }
+            p{
+                font-size: 18px;
+                width: 70%;
+                margin-bottom: 1rem;
+            }
+    
+            .contacts{
+                margin-top: 2rem;
+
+                .icon{
+                    top: .3rem;
+                    font-size: 22px;
+                }
+            }
+        }
+    
+        .vertical{
+            width: 550px;
+            left: -13.1rem;
+            top: 11rem;
+            
+            p{
+                font-size: 18px;
+                line-height: 36px;
+            }
+        }
+    }
+
+    footer{
+        margin-top: 10rem;
+    }
+
+}

@@ -1,0 +1,91 @@
+.contact{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-top: 5rem;
+
+
+    .horizontal{
+        width: 60%;
+        margin-top: 2.2rem;
+        margin-left: 10.6rem;
+
+        h3{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: $pro;
+            font-size: 100px;
+            font-weight: 700;
+            line-height: 151px;
+            letter-spacing: 0.02em;
+            color: $bgText;
+        }
+        h6{
+            font-family: $pro;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.02em;
+            color: $yellow;
+            margin-bottom: 3.5rem;
+        }
+        p{
+            font-family: $rale;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: $grey;
+            width: 70%;
+            margin-bottom: 1.6rem;
+            display: inline-block;
+        }
+
+        .contacts{
+            margin-top: 2rem;
+            p{
+                position: relative;
+                width: 50%;
+
+                &:hover{
+                    color: $yellow;
+                    transition: .5s ease;
+                    cursor: pointer;
+                }
+
+                .icon{
+                    position: relative;
+                    top: .4rem;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .vertical{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        transform: rotate(-90deg);
+        width: 550px;
+        position: relative;
+        left: -13.1rem;
+        top: 15rem;
+        
+        p{
+            display: inline-block;
+            font-family: $pro;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: rgba(209, 210, 216, 0.3);
+        }
+        hr{
+            width: 100px;
+            height: 0;
+            border-bottom: 2px solid rgba(209, 210, 216, 0.3);
+        }
+    }
+}

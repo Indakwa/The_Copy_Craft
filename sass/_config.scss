@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&family=Raleway:wght@500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s ease;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+$pro: 'Prompt', sans-serif;
+$rale: 'Raleway', sans-serif;
+
+$black: #030303;
+$yellow: #d9a113;
+$yellow2: #dba211;
+$bright: #D1D2D8;
+$grey: #A0A1A7;
+$darkGrey: #69696E;
+$bgText: rgba(209, 210, 216, 0.1);
+$bgText2: rgba(209, 210, 216, 0.2);
+
+$b: 2px solid red;
+$b2: 2px solid yellow;
+$b3: 2px solid rgb(246, 246, 246);

@@ -1,0 +1,77 @@
+.services{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+
+
+    .horizontal{
+        width: 60%;
+        margin-top: 2.2rem;
+        margin-left: 10rem;
+
+        h3{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: $pro;
+            font-size: 100px;
+            font-weight: 700;
+            line-height: 151px;
+            letter-spacing: 0.02em;
+            color: $bgText;
+        }
+        h6{
+            font-family: $pro;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.02em;
+            color: $yellow;
+            margin-bottom: 2.8rem;
+        }
+        p{
+            font-family: $rale;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 120%;
+            color: $grey;
+            width: 85%;
+            margin-bottom: 1.6rem;
+    
+            span{
+                font-family: $pro;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 37px;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+
+    .vertical{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        transform: rotate(-90deg);
+        width: 550px;
+        position: relative;
+        left: -13.8rem;
+        top: 22rem;
+        
+        p{
+            display: inline-block;
+            font-family: $pro;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: rgba(209, 210, 216, 0.3);
+        }
+        hr{
+            width: 172px;
+            height: 0;
+            border-bottom: 2px solid rgba(209, 210, 216, 0.3);
+        }
+    }
+}

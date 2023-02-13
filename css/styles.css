@@ -1,0 +1,844 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@700&family=Raleway:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: #030303;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 70.5vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70.5vw;
+  margin: 0 auto;
+  z-index: 10;
+  padding-top: 3rem;
+}
+header nav {
+  display: flex;
+}
+header nav ul {
+  margin-left: auto;
+  margin-right: -6.5rem;
+}
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 1rem;
+}
+header nav ul li a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #D1D2D8;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.5s ease;
+  color: #A0A1A7;
+}
+header nav ul li a:hover {
+  color: #d9a113;
+}
+
+.hamburger {
+  position: absolute;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  right: -1.2rem;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #A0A1A7;
+  margin: 6px 0px;
+  transition: 0.5s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 9;
+  background-color: #030303;
+  padding-top: 200px;
+  transition: 0.5s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  padding: 12px 16px;
+  color: #A0A1A7;
+  text-decoration: none;
+}
+
+.mobile-nav a:hover {
+  background-color: #030303;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .hide-mob {
+    display: none;
+  }
+}
+.landing {
+  border: 1px solid rgba(0, 0, 0, 0);
+  min-height: 90vh;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.landing h1 {
+  text-transform: uppercase;
+  font-family: "Prompt", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 121px;
+  letter-spacing: 0.02em;
+  color: #d9a113;
+  margin-top: 21.9rem;
+}
+.landing p {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #A0A1A7;
+  width: 75%;
+  margin-top: 3rem;
+}
+.landing h2 {
+  position: absolute;
+  top: 4.5rem;
+  left: -0.02em;
+  text-transform: uppercase;
+  font-family: "Prompt", sans-serif;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 302px;
+  letter-spacing: 0.02em;
+  color: rgba(209, 210, 216, 0.1);
+}
+.landing #lowerH2 {
+  left: 15rem;
+  top: 250px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+.services .horizontal {
+  width: 60%;
+  margin-top: 2.2rem;
+  margin-left: 10rem;
+}
+.services .horizontal h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Prompt", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 151px;
+  letter-spacing: 0.02em;
+  color: rgba(209, 210, 216, 0.1);
+}
+.services .horizontal h6 {
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #d9a113;
+  margin-bottom: 2.8rem;
+}
+.services .horizontal p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #A0A1A7;
+  width: 85%;
+  margin-bottom: 1.6rem;
+}
+.services .horizontal p span {
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+}
+.services .vertical {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  transform: rotate(-90deg);
+  width: 550px;
+  position: relative;
+  left: -13.8rem;
+  top: 22rem;
+}
+.services .vertical p {
+  display: inline-block;
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(209, 210, 216, 0.3);
+}
+.services .vertical hr {
+  width: 172px;
+  height: 0;
+  border-bottom: 2px solid rgba(209, 210, 216, 0.3);
+}
+
+.subscribe {
+  display: flex;
+  position: relative;
+  margin-top: 12rem;
+}
+.subscribe .imageDiv {
+  padding-top: 4rem;
+}
+.subscribe .imageDiv img {
+  width: 424px;
+  height: 380px;
+}
+.subscribe .right-section {
+  position: relative;
+  margin-left: -3rem;
+  width: 70%;
+}
+.subscribe .right-section h3 {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Prompt", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 151px;
+  letter-spacing: 0.02em;
+  color: rgba(209, 210, 216, 0.1);
+}
+.subscribe .right-section .inner-container {
+  position: relative;
+  top: 4.5rem;
+  left: 11rem;
+  width: 76%;
+}
+.subscribe .right-section .inner-container h6 {
+  white-space: nowrap;
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #d9a113;
+  margin-bottom: 2.4rem;
+}
+.subscribe .right-section .inner-container p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #A0A1A7;
+  width: 85%;
+  margin-bottom: 1.6rem;
+}
+.subscribe .right-section .inner-container form {
+  margin-top: 3rem;
+}
+.subscribe .right-section .inner-container form input {
+  border: none;
+  display: inline-block;
+  width: 98%;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 1.2rem 2rem;
+  background: #181818;
+  color: #A0A1A7;
+}
+.subscribe .right-section .inner-container form input::placeholder {
+  color: #69696E;
+}
+.subscribe .right-section .inner-container form input:focus {
+  border: 0.1px solid #69696E;
+}
+.subscribe .right-section .inner-container form button {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #030303;
+  padding: 0.8rem 2rem;
+  background: #d9a113;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: 0.5s ease;
+  margin-left: -10rem;
+  outline: none;
+  border: none;
+}
+.subscribe .right-section .inner-container form button:hover {
+  background: #D1D2D8;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  margin-top: 5rem;
+}
+.contact .horizontal {
+  width: 60%;
+  margin-top: 2.2rem;
+  margin-left: 10.6rem;
+}
+.contact .horizontal h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Prompt", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 151px;
+  letter-spacing: 0.02em;
+  color: rgba(209, 210, 216, 0.1);
+}
+.contact .horizontal h6 {
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #d9a113;
+  margin-bottom: 3.5rem;
+}
+.contact .horizontal p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #A0A1A7;
+  width: 70%;
+  margin-bottom: 1.6rem;
+  display: inline-block;
+}
+.contact .horizontal .contacts {
+  margin-top: 2rem;
+}
+.contact .horizontal .contacts p {
+  position: relative;
+  width: 50%;
+}
+.contact .horizontal .contacts p:hover {
+  color: #d9a113;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.contact .horizontal .contacts p .icon {
+  position: relative;
+  top: 0.4rem;
+  font-size: 25px;
+}
+.contact .vertical {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transform: rotate(-90deg);
+  width: 550px;
+  position: relative;
+  left: -13.1rem;
+  top: 15rem;
+}
+.contact .vertical p {
+  display: inline-block;
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(209, 210, 216, 0.3);
+}
+.contact .vertical hr {
+  width: 100px;
+  height: 0;
+  border-bottom: 2px solid rgba(209, 210, 216, 0.3);
+}
+
+footer {
+  margin-top: 14rem;
+  padding-bottom: 1rem;
+}
+footer p {
+  font-family: "Prompt", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  color: #69696E;
+  line-height: 1.2rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 96vw;
+    margin: 0 auto;
+    position: relative;
+  }
+  .landing {
+    border: 1px solid rgba(0, 0, 0, 0);
+    min-height: 50vh;
+    margin-bottom: 8rem;
+  }
+  .landing h1 {
+    font-size: 24px;
+    margin-top: 11.2rem;
+    line-height: 30px;
+    padding-left: 0.4rem;
+    color: #dba211;
+  }
+  .landing p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 100%;
+    margin-top: 1.2rem;
+    padding-left: 0.4rem;
+  }
+  .landing h2 {
+    white-space: nowrap;
+    top: 2.5rem;
+    left: -0.02em;
+    font-size: 60px;
+    color: rgba(209, 210, 216, 0.2);
+    line-height: 202px;
+  }
+  .landing #lowerH2 {
+    left: 4.3rem;
+    top: 95px;
+  }
+  .services .horizontal {
+    width: 90%;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+  }
+  .services .horizontal h3 {
+    white-space: nowrap;
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: rgba(209, 210, 216, 0.2);
+  }
+  .services .horizontal h6 {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #dba211;
+    margin-bottom: 1rem;
+  }
+  .services .horizontal p {
+    font-size: 16px;
+    line-height: 140%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .services .horizontal p span {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+  }
+  .services .vertical {
+    display: none;
+  }
+  .subscribe {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .subscribe .imageDiv {
+    padding-top: 0rem;
+    width: 80vw;
+    margin: 0 auto;
+    height: 300px;
+  }
+  .subscribe .imageDiv img {
+    transform: scaleX(-1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .subscribe .right-section {
+    position: relative;
+    margin-left: 0rem;
+    width: 100%;
+  }
+  .subscribe .right-section h3 {
+    white-space: nowrap;
+    font-size: 55px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: rgba(209, 210, 216, 0.2);
+  }
+  .subscribe .right-section .inner-container {
+    top: 1.2rem;
+    left: 0.5rem;
+    width: 96%;
+  }
+  .subscribe .right-section .inner-container h6 {
+    white-space: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0.8rem;
+  }
+  .subscribe .right-section .inner-container p {
+    font-size: 16px;
+    line-height: 140%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .subscribe .right-section .inner-container form {
+    margin-top: 1.8rem;
+  }
+  .subscribe .right-section .inner-container form input {
+    border: none;
+    display: inline-block;
+    width: 98%;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+  .subscribe .right-section .inner-container form button {
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    padding: 0.4rem 1rem;
+    font-size: 12px;
+    background: #dba211;
+    margin-left: -7rem;
+  }
+  .contact {
+    margin-top: 8rem;
+  }
+  .contact .horizontal {
+    width: 90%;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+  }
+  .contact .horizontal h3 {
+    white-space: nowrap;
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: rgba(209, 210, 216, 0.2);
+  }
+  .contact .horizontal h6 {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #dba211;
+    margin-bottom: 1rem;
+  }
+  .contact .horizontal p {
+    font-size: 16px;
+    line-height: 140%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .contact .horizontal .contacts {
+    margin-top: 0.2rem;
+  }
+  .contact .horizontal .contacts p {
+    position: relative;
+    width: 70%;
+  }
+  .contact .horizontal .contacts p .icon {
+    position: relative;
+    top: 0.27rem;
+    font-size: 20px;
+  }
+  .contact .vertical {
+    display: none;
+  }
+  footer {
+    margin-top: 6rem;
+    padding-bottom: 1rem;
+  }
+  footer p {
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #69696E;
+    line-height: 1.2rem;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .header {
+    width: 80vw;
+  }
+  .services {
+    margin-top: 8rem;
+  }
+  .container {
+    width: 80vw;
+  }
+  .subscribe .right-section {
+    margin-left: -6rem;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .header {
+    width: 90vw;
+  }
+  .container {
+    width: 90vw;
+  }
+  .landing {
+    min-height: 90vh;
+    margin-bottom: 4rem;
+  }
+  .landing h1 {
+    font-size: 60px;
+    line-height: 121px;
+    color: #d9a113;
+    margin-top: 20.6rem;
+  }
+  .landing p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 1rem;
+  }
+  .landing h2 {
+    top: 4.5rem;
+    left: -0.02em;
+    font-size: 170px;
+  }
+  .landing #lowerH2 {
+    left: 12.6rem;
+    top: 230px;
+  }
+  .services .horizontal {
+    width: 70%;
+  }
+  .subscribe {
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+  .subscribe .imageDiv {
+    padding: 0;
+    padding-left: 10rem;
+  }
+  .subscribe .imageDiv img {
+    width: 60%;
+    margin-left: auto;
+  }
+  .subscribe .right-section {
+    margin-left: 0rem;
+    margin-top: -6rem;
+  }
+  .contact {
+    margin-top: 16rem;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 899px) {
+  .header {
+    width: 90vw;
+  }
+  .container {
+    width: 90vw;
+  }
+  .landing {
+    min-height: 80vh;
+    margin-bottom: 4rem;
+  }
+  .landing h1 {
+    font-size: 50px;
+    line-height: 111px;
+    margin-top: 16rem;
+  }
+  .landing p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 1rem;
+  }
+  .landing h2 {
+    top: 2.5rem;
+    left: -0.02em;
+    font-size: 125px;
+  }
+  .landing #lowerH2 {
+    left: 9rem;
+    top: 160px;
+  }
+  .services .horizontal {
+    width: 80%;
+    margin-top: 2.2rem;
+    margin-left: 10rem;
+  }
+  .services .horizontal h3 {
+    font-size: 100px;
+    line-height: 151px;
+  }
+  .services .horizontal h6 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 2.8rem;
+  }
+  .services .horizontal p {
+    font-size: 18px;
+    line-height: 130%;
+    width: 85%;
+    margin-bottom: 1.6rem;
+  }
+  .services .horizontal p span {
+    font-size: 22px;
+    line-height: 130%;
+  }
+  .services .vertical {
+    top: 19rem;
+  }
+  .services .vertical p {
+    font-size: 20px;
+  }
+  .subscribe {
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+  .subscribe .imageDiv {
+    padding: 0;
+    padding-left: 10rem;
+  }
+  .subscribe .imageDiv img {
+    width: 70%;
+  }
+  .subscribe .right-section {
+    margin-left: 0rem;
+    margin-top: -6rem;
+  }
+  .subscribe .right-section h3 {
+    font-size: 92px;
+    line-height: 151px;
+  }
+  .subscribe .right-section .inner-container {
+    position: relative;
+    top: 4.5rem;
+    left: 11rem;
+    width: 100%;
+  }
+  .subscribe .right-section .inner-container h6 {
+    font-size: 18px;
+    margin-bottom: 2.2rem;
+  }
+  .subscribe .right-section .inner-container p {
+    font-size: 18px;
+    color: #A0A1A7;
+    width: 90%;
+    margin-bottom: 1.6rem;
+  }
+  .contact {
+    margin-top: 12rem;
+  }
+  .contact .horizontal {
+    width: 90%;
+    margin-top: 2.2rem;
+    margin-left: 10.6rem;
+  }
+  .contact .horizontal h3 {
+    white-space: nowrap;
+    font-size: 92px;
+  }
+  .contact .horizontal h6 {
+    font-size: 18px;
+    margin-bottom: 2.5rem;
+  }
+  .contact .horizontal p {
+    font-size: 18px;
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+  .contact .horizontal .contacts {
+    margin-top: 2rem;
+  }
+  .contact .horizontal .contacts .icon {
+    top: 0.3rem;
+    font-size: 22px;
+  }
+  .contact .vertical {
+    width: 550px;
+    left: -13.1rem;
+    top: 11rem;
+  }
+  .contact .vertical p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  footer {
+    margin-top: 10rem;
+  }
+}

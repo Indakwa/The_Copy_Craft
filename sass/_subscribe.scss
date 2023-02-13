@@ -1,0 +1,103 @@
+.subscribe{
+    display: flex;
+    position: relative;
+    margin-top: 12rem;
+
+    .imageDiv{
+        padding-top: 4rem;
+        img{
+            width: 424px;
+            height: 380px;
+        }
+    }
+
+    .right-section{
+        position: relative;
+        margin-left: -3rem;
+        width: 70%;
+
+        h3{
+            white-space: nowrap;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: $pro;
+            font-size: 100px;
+            font-weight: 700;
+            line-height: 151px;
+            letter-spacing: 0.02em;
+            color: $bgText;
+        }
+
+        .inner-container{
+            position: relative;
+            top: 4.5rem;
+            left: 11rem;
+            width: 76%;
+
+            h6{
+                white-space: nowrap;
+                font-family: $pro;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+                color: $yellow;
+                margin-bottom: 2.4rem;
+            }
+
+            p{
+                font-family: $rale;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 120%;
+                color: $grey;
+                width: 85%;
+                margin-bottom: 1.6rem;
+            }
+
+            form{
+                margin-top: 3rem;
+                input{
+                    border: none;
+                    display: inline-block;
+                    width: 98%;
+                    outline: none;
+                    font-size: 1.1rem;
+                    padding: 1.2rem 2rem;
+                    background: #181818;
+                    color: $grey;
+
+                    &::placeholder{
+                        color: $darkGrey;
+                    }
+
+                    &:focus{
+                        border: .1px solid $darkGrey;
+                    }
+                }
+
+                button{
+                    font-family: $pro;
+                    font-weight: 500;
+                    line-height: 21px;
+                    letter-spacing: 0.05em;
+                    color: $black;
+                    padding: .8rem 2rem;
+                    background: $yellow;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    transition: .5s ease;
+                    margin-left: -10rem;
+                    outline: none;
+                    border: none;
+
+                    &:hover{
+                        background: $bright;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
